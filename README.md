@@ -81,15 +81,12 @@ Download your preferred files and set the `video_path` in the configuration acco
    venv\Scripts\activate
 
 3. **Install dependencies**
-   ```bash
+    ```bash
    pip install -r requirments.txt
   
 ## ⚙️ Configuration
-
-Modify runtime parameters in the CONFIG dictionary at the top of main.py:
-
-   ```bash
-   CONFIG = {
+    ```bash
+    CONFIG = {
     "video_path": "path/to/video.mp4",
     "output_dir": "results/",
     "yolo_weights": "assets/YoloWeights/yolo11x.pt",
@@ -105,10 +102,22 @@ Modify runtime parameters in the CONFIG dictionary at the top of main.py:
     "frame_window": 150,
     "heatmap_accumulation_rate": 30.0,
 }
-  
- 
 
-Adjust these to match your environment and video paths.
+Modify runtime parameters in the CONFIG dictionary at the top of main.py:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
