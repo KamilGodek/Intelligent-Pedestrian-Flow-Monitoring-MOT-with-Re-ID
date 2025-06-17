@@ -69,7 +69,7 @@ Download your preferred files and set the `video_path` in the configuration acco
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/<YourUsername>/intelligent-pedestrian-mot-reid.git
+   git clone https://github.com/KamilGodek/Intelligent-Pedestrian-Flow-Monitoring-MOT-with-Re-ID
    cd intelligent-pedestrian-mot-reid
 
 2. **Create and activate a virtual environment**
