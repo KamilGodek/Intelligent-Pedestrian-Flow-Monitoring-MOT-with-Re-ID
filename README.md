@@ -138,14 +138,4 @@ intelligent-pedestrian-mot-reid/
 ```
 
 ## 🤝 Contributing 
-
 Contributions are welcome! Please open issues and submit pull requests for improvements or bug fixes.
-
-
-
-
-
-
-
-
-
