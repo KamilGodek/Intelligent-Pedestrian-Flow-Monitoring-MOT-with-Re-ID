@@ -1,0 +1,25 @@
+# IDE settings
+.idea/
+
+# Virtual environment
+venvsign/
+
+# Output folders
+picture/
+results/
+results_video_analysis/
+
+# Model weights and checkpoints
+YoloWeights/
+*.pt
+*.pth
+
+# Video files
+*.mp4
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Personal notes
+notatnik*.txt
