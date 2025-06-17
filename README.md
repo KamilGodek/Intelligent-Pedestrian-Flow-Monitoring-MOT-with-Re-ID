@@ -85,8 +85,10 @@ Download your preferred files and set the `video_path` in the configuration acco
    pip install -r requirments.txt
   
 ## ⚙️ Configuration
+
+3. **Install dependencies**
     ```bash
-    CONFIG = {
+   CONFIG = {
     "video_path": "path/to/video.mp4",
     "output_dir": "results/",
     "yolo_weights": "assets/YoloWeights/yolo11x.pt",
@@ -102,18 +104,60 @@ Download your preferred files and set the `video_path` in the configuration acco
     "frame_window": 150,
     "heatmap_accumulation_rate": 30.0,
 }
+  
+## ⚙️ Configuration
+Edytuj słownik `CONFIG` w `MOT_with_trajektori.py`, aby dopasować go do swojego środowiska:
 
-Modify runtime parameters in the CONFIG dictionary at the top of main.py:
+```python
+CONFIG = {
+"video_path": "path/to/video.mp4",
+"output_dir": "results/",
+"yolo_weights": "assets/YoloWeights/yolo11x.pt",
+"reid_weights": "assets/resnet50_fc512_msmt17.pt",
+"use_mask": False,
+"mask_path": "",
+"draw_tracks": True,
+"conf_threshold": 0.35,
+"iou_threshold": 0.45,
+"inference_size": 1600,
+"target_resolution": (1280, 720),
+"speed_threshold": 15.0,
+"frame_window": 150,
+"heatmap_accumulation_rate": 30.0,
+}
+```
+Adjust these values to match your environment and use case.
+
+## ▶️ Usage
+Run the application and follow interactive prompts:
+```python
+python MOT_with_trajektori.py
+```
+Select tak or nie when prompted for ROI masking and trajectory drawing.
+Press q to exit the live preview and terminate the program.
 
 
+## 📂 Outputs
+Upon completion, the specified output_dir will contain:
 
+- **last_frame_oop.jpg** — Annotated snapshot of the final frame.
+- **fps_plot_oop.png** — Chart of FPS performance over time.
+- **heatmap_oop.jpg** — Raw heatmap visualization.
+- **heatmap_overlay_oop.jpg** — Heatmap overlay on the last frame.
 
+## 🗂️ Project Structure
 
-
-
-
-
-
+```python
+intelligent-pedestrian-mot-reid/
+├── MOT_with_trajektori.py # Entry point with CONFIG and processing logic
+├── requirements.txt       # List of Python dependencies
+├── README.md              # Project documentation (this file)
+├── .gitignore             # Git ignore patterns
+└── assets/                # External assets (excluded from Git)
+    ├── YoloWeights/       # YOLO model weight files
+    │   └── yolo11x.pt
+    └── resnet50_fc512_msmt17.pt  # Re-ID model weights
+```
 
 
 
