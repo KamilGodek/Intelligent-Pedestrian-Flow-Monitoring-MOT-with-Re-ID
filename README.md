@@ -80,11 +80,35 @@ Download your preferred files and set the `video_path` in the configuration acco
    #Windows
    venv\Scripts\activate
 
-  3. **Install dependencies**
+3. **Install dependencies**
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirments.txt
+  
+## ⚙️ Configuration
 
-  ## ⚙️ Configuration
+Modify runtime parameters in the CONFIG dictionary at the top of main.py:
+
+   ```bash
+   CONFIG = {
+    "video_path": "path/to/video.mp4",
+    "output_dir": "results/",
+    "yolo_weights": "assets/YoloWeights/yolo11x.pt",
+    "reid_weights": "assets/resnet50_fc512_msmt17.pt",
+    "use_mask": False,
+    "mask_path": "",
+    "draw_tracks": True,
+    "conf_threshold": 0.35,
+    "iou_threshold": 0.45,
+    "inference_size": 1600,
+    "target_resolution": (1280, 720),
+    "speed_threshold": 15.0,
+    "frame_window": 150,
+    "heatmap_accumulation_rate": 30.0,
+}
+  
+ 
+
+Adjust these to match your environment and video paths.
 
 
 
