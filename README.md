@@ -85,29 +85,7 @@ Download your preferred files and set the `video_path` in the configuration acco
    pip install -r requirments.txt
   
 ## ⚙️ Configuration
-
-3. **Install dependencies**
-    ```bash
-   CONFIG = {
-    "video_path": "path/to/video.mp4",
-    "output_dir": "results/",
-    "yolo_weights": "assets/YoloWeights/yolo11x.pt",
-    "reid_weights": "assets/resnet50_fc512_msmt17.pt",
-    "use_mask": False,
-    "mask_path": "",
-    "draw_tracks": True,
-    "conf_threshold": 0.35,
-    "iou_threshold": 0.45,
-    "inference_size": 1600,
-    "target_resolution": (1280, 720),
-    "speed_threshold": 15.0,
-    "frame_window": 150,
-    "heatmap_accumulation_rate": 30.0,
-}
-  
-## ⚙️ Configuration
-Edytuj słownik `CONFIG` w `MOT_with_trajektori.py`, aby dopasować go do swojego środowiska:
-
+Modify runtime parameters in the CONFIG dictionary at the top of MOT_with_trajektori.pyy:
 ```python
 CONFIG = {
 "video_path": "path/to/video.mp4",
@@ -159,6 +137,9 @@ intelligent-pedestrian-mot-reid/
     └── resnet50_fc512_msmt17.pt  # Re-ID model weights
 ```
 
+## 🤝 Contributing 
+
+Contributions are welcome! Please open issues and submit pull requests for improvements or bug fixes.
 
 
 
