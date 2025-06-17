@@ -1,9 +1,6 @@
 # Intelligent-Pedestrian-Flow-Monitoring-MOT-with-Re-ID
 An object-oriented platform integrating YOLO, BotSort, and Re-ID for robust real-time pedestrian detection and tracking. It generates heatmaps, performance metrics, and trajectory analyses for comprehensive flow insights.
 
-# Intelligent Pedestrian Flow Monitoring (MOT) with Re-ID
-
-> A high-performance, modular framework for real-time pedestrian detection, multi-object tracking, and re-identification in video streams.
 
 ---
 
@@ -76,28 +73,18 @@ Download your preferred files and set the `video_path` in the configuration acco
    cd intelligent-pedestrian-mot-reid
 
 2. **Create and activate a virtual environment**
+   ```bash
+   python -m venv venv
+   #macOS/Linux
+   source venv/bin/activate
+   #Windows
+   venv\Scripts\activate
 
-python -m venv venv
-# macOS/Linux
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
+  3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
 
-3. **Install dependenciest**
-   
-pip install -r requirements.txt
-
-
-
-
-
-
-
-
-
-
-
-
+  ## ⚙️ Configuration
 
 
 
