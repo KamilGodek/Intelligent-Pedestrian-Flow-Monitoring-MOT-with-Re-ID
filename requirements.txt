@@ -1,0 +1,6 @@
+numpy>=1.22.0
+opencv-python>=4.5.3.56
+ultralytics>=8.0.20
+boxmot>=0.1.2
+torch>=1.13.1
+matplotlib>=3.5.1
