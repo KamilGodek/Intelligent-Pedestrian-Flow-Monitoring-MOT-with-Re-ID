@@ -16,7 +16,6 @@ An object-oriented platform integrating YOLO, BotSort, and Re-ID for robust real
 8. [Outputs](#outputs)  
 9. [Project Structure](#project-structure)  
 10. [Contributing](#contributing)  
-11. [License](#license)  
 
 ---
 
