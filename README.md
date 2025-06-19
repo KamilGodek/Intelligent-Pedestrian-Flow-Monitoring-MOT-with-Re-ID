@@ -44,7 +44,6 @@ An object-oriented platform integrating YOLO, BotSort, and Re-ID for robust real
 - **OpenCV** for video I/O and image processing  
 - **Matplotlib** for plotting analytics  
 - **NumPy**, **collections**, **Pathlib**, **typing** (standard library utilities)  
-
 ---
 
 ## 🎥 Dataset
